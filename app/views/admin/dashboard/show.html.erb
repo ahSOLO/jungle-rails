@@ -2,4 +2,5 @@
 <p>Products in the database: <%= @product_count %></p>
 <p>Categories in the database: <%= @category_count %></p>
 
-<a href="/admin/products">Go to the product management page</a>
+<p><%= link_to 'Manage Products', [:admin, :products] %></p>
+<p><%= link_to 'Manage Categories', [:admin, :categories] %></p>
