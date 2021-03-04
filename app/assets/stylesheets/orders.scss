@@ -1,0 +1,13 @@
+main section.orders-show {
+  .order-summary {
+    margin: 0.25em;
+
+    th, td {
+      padding: 0.2em; 
+    }
+
+    .main-img {
+      max-width: 100%;
+    }
+  }
+}

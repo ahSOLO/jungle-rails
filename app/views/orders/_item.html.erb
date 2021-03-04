@@ -1,0 +1,13 @@
+<tr>
+  <% @order.line_items.each do |line_item| %>
+    <% Product.find(line_item.product_id) do |product| %> 
+      <td><img class='main-img' src=<%= product.image %>></td>
+      <td>
+        <p><b><%= product.name %></b></p>
+        <p><%= product.description %></p>
+      </td>
+    <% end %>
+      <td><%= line_item.quantity %></p>
+      <td><%= humanized_money_with_symbol line_item.total_price_cents %></p>
+  <% end %>
+</tr>
