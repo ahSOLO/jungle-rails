@@ -1,2 +1,5 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h4>Welcome to the Admin page. Here are some database statistics: </h4>
+<p>Products in the database: <%= @product_count %></p>
+<p>Categories in the database: <%= @category_count %></p>
+
+<a href="/admin/products">Go to the product management page</a>
