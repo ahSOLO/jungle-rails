@@ -6,6 +6,7 @@
 // App
 @import "products";
 @import "orders";
+@import "signup";
 
 // Global
 body {
@@ -15,4 +16,15 @@ body {
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+#navbar {
+  li {
+    display: flex;
+    align-content: center;
+    
+    p {
+      padding-top: 1em;
+    }
+  }
 }
